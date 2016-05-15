@@ -1,0 +1,105 @@
+<html>
+<head>
+<title> BONUS LEVEL </title>
+<script src="Scripts/processing.js"></script>
+<script type="text/processing" data-processing-target="mycanvas">
+PImage bomb;
+PImage riddle;
+void setup(){
+
+size( 1216,703);
+
+frameRate( 30 );
+
+bomb = loadImage ("pic/bomb.jpg");
+riddle = loadImage ("pic/riddle.png");
+
+}
+
+
+void draw()
+{
+background(255,255,255);
+fill(0,0,0);
+
+image(bomb,0,178,518);
+image(riddle,0,0,518);
+
+fill(0,0,255);
+textSize(25);
+text("WIFE",18,289);
+
+fill(255,0,0);
+textSize(25);
+text("BUTLER",270,400);
+
+fill(0,255,0);
+textSize(25);
+text("MAID",149,240);
+
+fill(255,255,0);
+textSize(25);
+text("COOK",180,345);
+
+if (mousePressed == true)
+	{
+		if (mouseButton ==LEFT)
+		{
+			if (mouseX > 14 && mouseX < 84 &&
+				mouseY > 269 && mouseY<295 )
+
+				{
+					link("fail.html");
+				}
+		}
+	}
+
+if (mousePressed == true)
+	{
+		if (mouseButton ==LEFT)
+		{
+			if (mouseX > 178 && mouseX < 258 &&
+				mouseY > 323 && mouseY<353 )
+
+				{
+					link("fail.html");
+				}
+		}
+	}
+
+if (mousePressed == true)
+	{
+		if (mouseButton ==LEFT)
+		{
+			if (mouseX > 269 && mouseX < 374 &&
+				mouseY > 380 && mouseY<406 )
+
+				{
+					link("fail.html");
+				}
+		}
+	}
+
+if (mousePressed == true)
+	{
+		if (mouseButton ==LEFT)
+		{
+			if (mouseX > 145&& mouseX <215 &&
+				mouseY > 217 && mouseY<246 )
+
+				{
+					link("2Exit.html");
+				}
+		}
+	}
+
+}
+
+</script>
+<canvas id="mycanvas"></canvas>
+</head>
+
+<body>
+
+</body>
+</html>

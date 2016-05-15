@@ -1,0 +1,44 @@
+<html>
+<head>
+<title> Clue Title </title>
+<script src="Scripts/processing.js"></script>
+<script type="text/processing" data-processing-target="mycanvas">
+
+PImage wife;
+
+void setup()
+{
+
+size( 412 , 110 );
+frameRate( 30 );
+
+wife = loadImage("pic/thewife2.png");
+
+}
+
+void draw()
+{
+
+	background(32,32,47);
+	image(wife,0,0);
+	fill(255,255,255);
+	rect(300,50,100,50);
+	fill(0,0,0);
+	textSize(25);
+	text("Proceed",305,83);
+	if(mousePressed == true && mouseButton == LEFT)
+	{
+		if(mouseX > 300 && mouseX < 400 && mouseY > 50 && mouseY < 100)
+		{
+			link("c1.html");
+		}
+	}
+
+}
+
+</script>
+<canvas id="mycanvas"></canvas>
+</head>
+<body>
+</body>
+</html

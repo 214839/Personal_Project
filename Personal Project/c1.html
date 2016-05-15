@@ -1,0 +1,44 @@
+<html>
+<head>
+<title> Clue #1 </title>
+<script src="Scripts/processing.js"></script>
+<script type="text/processing" data-processing-target="mycanvas">
+
+PImage butler;
+
+void setup()
+{
+
+size( 412 , 110 );
+frameRate( 30 );
+
+butler = loadImage("pic/thebuttler.jpg");
+
+}
+
+void draw()
+{
+
+	background(32,32,47);
+	image(butler,0,0);
+	fill(255,255,255);
+	rect(300,50,100,50);
+	fill(0,0,0);
+	textSize(25);
+	text("Proceed",305,83);
+	if(mousePressed == true && mouseButton == LEFT)
+	{
+		if(mouseX > 300 && mouseX < 400 && mouseY > 50 && mouseY < 100)
+		{
+			link("c2.html");
+		}
+	}
+
+}
+
+</script>
+<canvas id="mycanvas"></canvas>
+</head>
+<body>
+</body>
+</html
