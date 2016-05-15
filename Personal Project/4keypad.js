@@ -21,7 +21,7 @@ b = loadImage("Images/Level 5/b.png");
 c = loadImage("Images/Level 5/c.png");
 
 yp = loadImage("Images/Level 5/yp.jpg");
-undo = loadImage("Images/Level 5/undo.png");
+undo = loadImage("Images/Level 5/Undo.png");
 reset = loadImage("Images/Level 5/reset.png");
 
 countClickC = 0;
